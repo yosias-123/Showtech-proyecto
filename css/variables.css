@@ -1,0 +1,54 @@
+/* ============================================================
+   SHOW TECH SOLUTIONS — variables.css
+   Tokens de diseño globales. Modificar aquí afecta todo el sitio.
+   ============================================================ */
+
+:root {
+  /* ── Colores primarios ── */
+  --gold:         #C9A84C;
+  --gold-light:   #E8C97A;
+  --gold-dark:    #9A7A2E;
+  --gold-pale:    rgba(201, 168, 76, 0.10);
+  --gold-border:  rgba(201, 168, 76, 0.20);
+
+  /* ── Fondos ── */
+  --bg-base:      #080808;
+  --bg-soft:      #101010;
+  --bg-mid:       #181818;
+  --bg-card:      #1E1E1E;
+
+  /* ── Texto ── */
+  --text-white:   #F8F4EE;
+  --text-dim:     #C8C4BC;
+  --text-gray:    #A8A49C;
+  --text-muted:   #7A7870;
+
+  /* ── Tipografía ── */
+  --font-serif:   'Cormorant Garamond', Georgia, serif;
+  --font-sans:    'Outfit', system-ui, sans-serif;
+
+  /* ── Tamaños de fuente ── */
+  --fs-xs:    9px;
+  --fs-sm:    12px;
+  --fs-base:  14px;
+  --fs-md:    16px;
+  --fs-lg:    22px;
+  --fs-xl:    30px;
+  --fs-2xl:   44px;
+
+  /* ── Espaciado de sección ── */
+  --section-pad:    130px;
+  --section-pad-h:  5%;
+
+  /* ── Transiciones ── */
+  --transition:   0.32s ease;
+  --transition-slow: 0.65s ease;
+
+  /* ── Bordes ── */
+  --radius-sm:  2px;
+  --radius-md:  4px;
+  --radius-lg:  8px;
+
+  /* ── Navbar ── */
+  --navbar-h:   76px;
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Show Tech Solutions — Organizadores de Eventos en Lima. Bodas, eventos corporativos, fiestas privadas, catering y decoración.">
+  <title>Show Tech Solutions | Organizadores de Eventos en Lima</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+    NAVBAR
+════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+  <a href="index.html" class="navbar__logo" aria-label="Show Tech Solutions – inicio">
+    <div class="logo__squares"><i></i><i></i><i></i><i></i></div>
+    <div class="logo__text">
+      <div class="logo__name"><b>SHOW</b>TECH</div>
+      <div class="logo__sub">SOLUTIONS</div>
+    </div>
+  </a>
+
+  <ul class="navbar__links" role="list">
+    <li><a href="#inicio"       class="active">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#eventos">Eventos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+  </ul>
+
+  <!-- Hamburger mobile -->
+  <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="navbar__mobile" id="mobile-menu" aria-label="Menú móvil">
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#eventos">Eventos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#contacto" class="nav-cta-mobile">Contáctanos</a>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════
+    HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="inicio" aria-label="Inicio">
+
+  <div class="hero__bg"     aria-hidden="true"></div>
+  <div class="hero__line-v" aria-hidden="true"></div>
+  <div class="hero__corner" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="hero__eyebrow" aria-hidden="true">
+      <div class="hero__eyebrow-dash"></div>
+      <span>Lima, Perú · Desde el primer detalle hasta el último</span>
+    </div>
+
+    <h1 class="hero__title">
+      Organiza&shy;dores<br>
+      de <em>Eventos</em>
+      <span class="bold">en Lima</span>
+    </h1>
+
+    <p class="hero__sub">
+      Planifiquemos juntos tu próximo evento.<br>
+      Creatividad, tecnología y pasión en cada celebración.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#contacto" class="btn-gold">Contáctanos</a>
+      <a href="#nosotros" class="btn-outline-gold">
+        <span class="line"></span>Conócenos
+      </a>
+    </div>
+  </div>
+
+  <!-- Estadísticas -->
+  <div class="hero__stats" aria-label="Estadísticas">
+    <div class="hero__stat">
+      <div class="n" data-target="200" data-suffix="+">0</div>
+      <div class="l">Eventos realizados</div>
+    </div>
+    <div class="hero__stat">
+      <div class="n" data-target="5" data-suffix="+">0</div>
+      <div class="l">Años de experiencia</div>
+    </div>
+    <div class="hero__stat">
+      <div class="n" data-target="100" data-suffix="%">0</div>
+      <div class="l">Satisfacción</div>
+    </div>
+  </div>
+
+  <!-- Scroll -->
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="bar"></div>
+    <span class="txt">SCROLL</span>
+  </div>
+
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    NOSOTROS
+════════════════════════════════════════════════════════ -->
+<section class="s-nosotros" id="nosotros" aria-label="Nosotros">
+  <div class="nosotros__grid">
+
+    <!-- Video / Visual -->
+    <div class="nosotros__visual reveal">
+      <div class="frame-corner frame-corner--tl" aria-hidden="true"></div>
+      <div class="nosotros__frame">
+        <div class="nosotros__play" role="button" tabindex="0" aria-label="Ver nuestro video">
+          <div class="play-circle">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="play-label">Ver nuestro trabajo</span>
+        </div>
+      </div>
+      <div class="frame-corner frame-corner--br" aria-hidden="true"></div>
+    </div>
+
+    <!-- Texto -->
+    <div class="nosotros__text reveal">
+      <div class="section-label">
+        <div class="section-label__line"></div>
+        <span class="section-label__text">Quiénes somos</span>
+      </div>
+      <h2 class="section-title">
+        Somos <em>Organizadores</em><br>de Eventos en Lima
+      </h2>
+      <br>
+      <p>
+        En <strong>Show Tech Solutions</strong> somos especialistas en la organización de eventos en Lima,
+        combinando creatividad, tecnología y logística para crear experiencias inolvidables.
+        Nos encargamos de todo el proceso: desde la planificación estratégica hasta la ejecución
+        impecable, ya sea para eventos corporativos, sociales, culturales o institucionales.
+      </p>
+      <p>
+        Nuestro equipo está formado por profesionales apasionados que trabajan con detalle y
+        compromiso para superar las expectativas de cada cliente.
+      </p>
+      <p>
+        Con una trayectoria sólida y el respaldo de marcas y organizaciones que confían en nosotros,
+        ofrecemos servicios como <strong>producción audiovisual, decoración temática, gestión de proveedores</strong>
+        y soluciones innovadoras para eventos presenciales, virtuales o híbridos.
+      </p>
+
+      <div class="pills" aria-label="Valores">
+        <span class="pill">Creatividad</span>
+        <span class="pill">Tecnología</span>
+        <span class="pill">Profesionalismo</span>
+        <span class="pill">Personalización</span>
+        <span class="pill">Compromiso</span>
+        <span class="pill">Elegancia</span>
+      </div>
+
+      <a href="#contacto" class="btn-gold">Más de nosotros</a>
+    </div>
+  </div>
+
+  <!-- Misión / Visión -->
+  <div class="mv-grid">
+    <div class="mv-card reveal">
+      <span class="mv-card__icon" aria-hidden="true">🎯</span>
+      <div class="mv-card__title">Misión</div>
+      <p class="mv-card__text">
+        Crear experiencias inolvidables a través de la planificación y producción integral de eventos,
+        ofreciendo soluciones creativas, personalizadas y de alta calidad que superen las expectativas
+        de nuestros clientes.
+      </p>
+    </div>
+    <div class="mv-card reveal">
+      <span class="mv-card__icon" aria-hidden="true">🚀</span>
+      <div class="mv-card__title">Visión</div>
+      <p class="mv-card__text">
+        Ser una empresa líder en la industria de organización de eventos a nivel nacional,
+        reconocida por la innovación, el profesionalismo y la excelencia en cada proyecto
+        que realizamos.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    CÓMO TRABAJAMOS
+════════════════════════════════════════════════════════ -->
+<section class="s-proceso" id="proceso" aria-label="Cómo trabajamos">
+  <div class="proceso__head reveal">
+    <div class="section-label">
+      <div class="section-label__line"></div>
+      <span class="section-label__text">Nuestro método</span>
+    </div>
+    <h2 class="section-title">Cómo <em>Trabajamos</em></h2>
+  </div>
+
+  <div class="steps" role="list">
+    <div class="step reveal" role="listitem">
+      <div class="step__num-wrap" aria-hidden="true">
+        <div class="step__ring-outer"></div>
+        <div class="step__ring-inner"></div>
+        <span class="step__num">1</span>
+      </div>
+      <h3 class="step__title">Consulta</h3>
+      <p class="step__desc">
+        Nos reunimos contigo para conocer tu visión, objetivos y expectativas.
+        Esta primera etapa nos permite entender a fondo qué deseas lograr y
+        cómo podemos ayudarte a hacerlo realidad.
+      </p>
+    </div>
+
+    <div class="step reveal" role="listitem">
+      <div class="step__num-wrap" aria-hidden="true">
+        <div class="step__ring-outer"></div>
+        <div class="step__ring-inner"></div>
+        <span class="step__num">2</span>
+      </div>
+      <h3 class="step__title">Planificación</h3>
+      <p class="step__desc">
+        Diseñamos una propuesta personalizada que abarca desde la logística hasta el diseño creativo.
+        Coordinamos proveedores, tiempos y recursos para garantizar un evento sin contratiempos.
+      </p>
+    </div>
+
+    <div class="step reveal" role="listitem">
+      <div class="step__num-wrap" aria-hidden="true">
+        <div class="step__ring-outer"></div>
+        <div class="step__ring-inner"></div>
+        <span class="step__num">3</span>
+      </div>
+      <h3 class="step__title">Ejecución</h3>
+      <p class="step__desc">
+        Hacemos que todo suceda. Supervisamos cada detalle durante el evento para asegurar que
+        todo salga perfecto, mientras tú disfrutas del momento sin preocupaciones.
+      </p>
+    </div>
+  </div>
+
+  <div class="steps__cta reveal">
+    <a href="#contacto" class="btn-gold">Reserve una consulta</a>
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    TIPOS DE EVENTOS
+════════════════════════════════════════════════════════ -->
+<section class="s-eventos" id="eventos" aria-label="Tipos de eventos">
+  <div class="eventos__head reveal">
+    <div class="section-label">
+      <div class="section-label__line"></div>
+      <span class="section-label__text">Lo que hacemos</span>
+    </div>
+    <h2 class="section-title">Todo Tipo de <em>Eventos</em></h2>
+    <p class="eventos__sub">
+      Creamos experiencias únicas para cada ocasión: fiestas privadas, bodas memorables
+      y eventos corporativos de alto nivel. Nos encargamos de todo para que tú solo disfrutes.
+    </p>
+  </div>
+
+  <div class="eventos__grid reveal">
+
+    <!-- Fiestas -->
+    <article class="ev-card">
+      <div class="ev-card__bg"   aria-hidden="true"></div>
+      <div class="ev-card__hatch" aria-hidden="true"></div>
+      <div class="ev-card__shade" aria-hidden="true"></div>
+      <div class="ev-card__body">
+        <span class="ev-card__emoji" aria-hidden="true">🎉</span>
+        <h3 class="ev-card__name">Fiestas</h3>
+        <div class="ev-card__label">Celebraciones privadas</div>
+        <p class="ev-card__desc">
+          Cumpleaños, aniversarios y fiestas temáticas diseñadas a tu medida con
+          ambientación, catering y entretenimiento de primer nivel.
+        </p>
+        <a href="#contacto" class="ev-card__link">
+          <span class="ev-card__link-bar"></span>Cotizar
+        </a>
+      </div>
+    </article>
+
+    <!-- Bodas -->
+    <article class="ev-card">
+      <div class="ev-card__bg"   aria-hidden="true"></div>
+      <div class="ev-card__hatch" aria-hidden="true"></div>
+      <div class="ev-card__shade" aria-hidden="true"></div>
+      <div class="ev-card__body">
+        <span class="ev-card__emoji" aria-hidden="true">💍</span>
+        <h3 class="ev-card__name">Bodas</h3>
+        <div class="ev-card__label">El día más especial</div>
+        <p class="ev-card__desc">
+          Organizamos tu boda con elegancia y precisión: decoración floral, catering exquisito
+          y coordinación integral para un día perfecto e irrepetible.
+        </p>
+        <a href="#contacto" class="ev-card__link">
+          <span class="ev-card__link-bar"></span>Cotizar
+        </a>
+      </div>
+    </article>
+
+    <!-- Corporativo -->
+    <article class="ev-card">
+      <div class="ev-card__bg"   aria-hidden="true"></div>
+      <div class="ev-card__hatch" aria-hidden="true"></div>
+      <div class="ev-card__shade" aria-hidden="true"></div>
+      <div class="ev-card__body">
+        <span class="ev-card__emoji" aria-hidden="true">🏢</span>
+        <h3 class="ev-card__name">Corporativo</h3>
+        <div class="ev-card__label">Eventos empresariales</div>
+        <p class="ev-card__desc">
+          Lanzamientos de marca, conferencias, cenas de gala y activaciones.
+          Soluciones profesionales que elevan la imagen de tu empresa.
+        </p>
+        <a href="#contacto" class="ev-card__link">
+          <span class="ev-card__link-bar"></span>Cotizar
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    SERVICIOS
+════════════════════════════════════════════════════════ -->
+<section class="s-servicios" id="servicios" aria-label="Servicios">
+  <div class="servicios__layout">
+
+    <div class="servicios__sticky reveal">
+      <div class="section-label">
+        <div class="section-label__line"></div>
+        <span class="section-label__text">Nuestros servicios</span>
+      </div>
+      <h2 class="section-title">Servicios Que <em>Brindamos</em></h2>
+      <p>
+        Ofrecemos soluciones integrales para que cada evento sea una experiencia única,
+        cuidando cada aspecto con profesionalismo y creatividad.
+      </p>
+      <a href="#contacto" class="btn-gold mt-lg">Solicitar cotización</a>
+    </div>
+
+    <div class="servicios__list reveal">
+
+      <article class="srv-card">
+        <div class="srv-card__top">
+          <span class="srv-card__emoji" aria-hidden="true">🍽️</span>
+          <h3 class="srv-card__name">Catering y Decoración</h3>
+        </div>
+        <p class="srv-card__desc">
+          Ofrecemos un servicio de catering delicioso y creativo, acompañado de una decoración
+          pensada hasta el último detalle. Cada montaje refleja tu estilo y el tipo de evento que deseas vivir.
+        </p>
+        <div class="srv-card__tags" aria-label="Incluye">
+          <span class="srv-card__tag">Buffet</span>
+          <span class="srv-card__tag">Cócteles</span>
+          <span class="srv-card__tag">Coffee Break</span>
+          <span class="srv-card__tag">Montaje</span>
+        </div>
+      </article>
+
+      <article class="srv-card">
+        <div class="srv-card__top">
+          <span class="srv-card__emoji" aria-hidden="true">🌸</span>
+          <h3 class="srv-card__name">Flores Decorativas</h3>
+        </div>
+        <p class="srv-card__desc">
+          Transformamos ambientes con arreglos florales únicos. Desde centros de mesa hasta
+          estructuras florales impactantes, cada flor aporta belleza y armonía a tu celebración.
+        </p>
+        <div class="srv-card__tags">
+          <span class="srv-card__tag">Centros de mesa</span>
+          <span class="srv-card__tag">Arcos florales</span>
+          <span class="srv-card__tag">Ambientación</span>
+        </div>
+      </article>
+
+      <article class="srv-card">
+        <div class="srv-card__top">
+          <span class="srv-card__emoji" aria-hidden="true">🎵</span>
+          <h3 class="srv-card__name">Entretenimiento</h3>
+        </div>
+        <p class="srv-card__desc">
+          Música en vivo, DJs, shows temáticos y más. Contamos con opciones de entretenimiento
+          para todo tipo de evento, creando momentos inolvidables para tus invitados.
+        </p>
+        <div class="srv-card__tags">
+          <span class="srv-card__tag">DJ</span>
+          <span class="srv-card__tag">Música en vivo</span>
+          <span class="srv-card__tag">Shows temáticos</span>
+          <span class="srv-card__tag">Animación</span>
+        </div>
+      </article>
+
+      <article class="srv-card">
+        <div class="srv-card__top">
+          <span class="srv-card__emoji" aria-hidden="true">🎬</span>
+          <h3 class="srv-card__name">Producción Audiovisual</h3>
+        </div>
+        <p class="srv-card__desc">
+          Fotografía profesional, filmación y producción audiovisual para que los recuerdos
+          de tu evento queden inmortalizados con la más alta calidad.
+        </p>
+        <div class="srv-card__tags">
+          <span class="srv-card__tag">Fotografía</span>
+          <span class="srv-card__tag">Filmación</span>
+          <span class="srv-card__tag">Transmisión en vivo</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    SOBRE NOSOTROS (detalle: Misión / Visión + equipo)
+════════════════════════════════════════════════════════ -->
+<section class="s-sobre" id="sobre" aria-label="Sobre nosotros">
+  <div class="sobre__header">
+    <div class="section-label reveal">
+      <div class="section-label__line"></div>
+      <span class="section-label__text">Nuestro equipo</span>
+    </div>
+    <h2 class="section-title reveal">Sobre <em>Nosotros</em></h2>
+  </div>
+
+  <div class="sobre__grid reveal">
+    <div class="sobre__img" aria-hidden="true">
+      <div class="sobre__img-inner">
+        <span class="sobre__placeholder">👥</span>
+      </div>
+    </div>
+    <div class="sobre__content">
+      <h3 class="section-title">Sobre <em>Nosotros</em></h3>
+      <br>
+      <div class="sobre__block">
+        <div class="sobre__block-title"><span aria-hidden="true">🎯</span> Misión</div>
+        <p>
+          Crear experiencias inolvidables a través de la planificación y producción integral
+          de eventos, ofreciendo soluciones creativas, personalizadas y de alta calidad que
+          superen las expectativas de nuestros clientes.
+        </p>
+      </div>
+      <div class="sobre__block">
+        <div class="sobre__block-title"><span aria-hidden="true">🚀</span> Visión</div>
+        <p>
+          Ser una empresa líder en la industria de organización de eventos a nivel nacional,
+          reconocida por la innovación, el profesionalismo y la excelencia en cada proyecto
+          que realizamos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    TESTIMONIOS
+════════════════════════════════════════════════════════ -->
+<section class="s-testimonios" id="testimonios" aria-label="Testimonios">
+  <div class="testimonios__head reveal">
+    <div class="section-label">
+      <div class="section-label__line"></div>
+      <span class="section-label__text">Lo que dicen</span>
+    </div>
+    <h2 class="section-title"><em>Testimonios</em></h2>
+  </div>
+
+  <div class="testimonios__grid">
+
+    <article class="testi-card reveal">
+      <div class="testi-card__stars" aria-label="5 estrellas">★★★★★</div>
+      <span class="testi-card__quote" aria-hidden="true">"</span>
+      <p class="testi-card__text">
+        Organizar nuestra boda con Show Tech Solutions fue una experiencia increíble.
+        Nos hicieron sentir tranquilos desde el inicio y cuidaron cada detalle con
+        profesionalismo y cariño. Todo salió incluso mejor de lo que imaginamos. ¡Eternamente agradecidos!
+      </p>
+      <div class="testi-card__line" aria-hidden="true"></div>
+      <div class="testi-card__name">María Espinoza</div>
+      <div class="testi-card__role">Boda en Miraflores</div>
+    </article>
+
+    <article class="testi-card reveal">
+      <div class="testi-card__stars" aria-label="5 estrellas">★★★★★</div>
+      <span class="testi-card__quote" aria-hidden="true">"</span>
+      <p class="testi-card__text">
+        Teníamos poco tiempo para organizar un evento corporativo y el equipo de Show Tech Solutions
+        se encargó de todo. Fueron claros, creativos y muy profesionales. El evento fue impecable
+        y recibimos excelentes comentarios. Son nuestro proveedor de confianza.
+      </p>
+      <div class="testi-card__line" aria-hidden="true"></div>
+      <div class="testi-card__name">Carlos Ramírez</div>
+      <div class="testi-card__role">Gerente de Marketing</div>
+    </article>
+
+    <article class="testi-card reveal">
+      <div class="testi-card__stars" aria-label="5 estrellas">★★★★★</div>
+      <span class="testi-card__quote" aria-hidden="true">"</span>
+      <p class="testi-card__text">
+        Contraté a Show Tech Solutions para una fiesta sorpresa y fue un éxito total.
+        Captaron mi idea desde el principio y se encargaron de todo. La ambientación,
+        el catering y el entretenimiento fueron de primera. Mis invitados quedaron encantados.
+      </p>
+      <div class="testi-card__line" aria-hidden="true"></div>
+      <div class="testi-card__name">Lucía Mendoza</div>
+      <div class="testi-card__role">Fiesta privada en Surco</div>
+    </article>
+
+  </div>
+</section>
+<div class="sep"></div>
+
+
+<!-- ════════════════════════════════════════════════════════
+    CONTACTO
+════════════════════════════════════════════════════════ -->
+<section class="s-contacto" id="contacto" aria-label="Contacto">
+  <div class="contacto__bg-word" aria-hidden="true">EVENTOS</div>
+
+  <div class="contacto__grid">
+
+    <!-- Info -->
+    <div class="reveal">
+      <div class="section-label">
+        <div class="section-label__line"></div>
+        <span class="section-label__text">Hablemos</span>
+      </div>
+      <h2 class="section-title contacto__title">¡Comencemos<br>a <em>Planificar!</em></h2>
+      <p class="contacto__para">
+        Cuéntanos sobre tu evento y te contactaremos a la brevedad para asesorarte
+        y hacer realidad cada detalle que imaginaste.
+      </p>
+
+      <div class="contact-items">
+        <a href="tel:+51908530433" class="c-item">
+          <div class="c-item__icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="c-item__label">Llámanos</div>
+            <div class="c-item__value">+51 908 530 433</div>
+          </div>
+        </a>
+        <a href="mailto:contacto@showtechsolutions.com.pe" class="c-item">
+          <div class="c-item__icon" aria-hidden="true">✉️</div>
+          <div>
+            <div class="c-item__label">Escríbenos</div>
+            <div class="c-item__value">contacto@showtechsolutions.com.pe</div>
+          </div>
+        </a>
+        <a href="https://wa.me/51908530433" class="c-item" target="_blank" rel="noopener">
+          <div class="c-item__icon" aria-hidden="true">💬</div>
+          <div>
+            <div class="c-item__label">WhatsApp</div>
+            <div class="c-item__value">+51 908 530 433</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="socials">
+        <a href="#" class="social-btn" title="Facebook" aria-label="Facebook">f</a>
+        <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="cform reveal" role="form" aria-label="Formulario de contacto">
+      <div class="cform__title">Solicita tu cotización</div>
+      <div class="frow">
+        <div class="fgroup">
+          <label class="flabel" for="nombre">Nombre</label>
+          <input id="nombre" type="text" class="finput" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="fgroup">
+          <label class="flabel" for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" class="finput" placeholder="+51 999 000 000">
+        </div>
+      </div>
+      <div class="fgroup">
+        <label class="flabel" for="email">Correo electrónico</label>
+        <input id="email" type="email" class="finput" placeholder="tu@correo.com" required>
+      </div>
+      <div class="fgroup">
+        <label class="flabel" for="tipo">Tipo de evento</label>
+        <select id="tipo" class="fselect">
+          <option value="">Selecciona una opción</option>
+          <option>Boda</option>
+          <option>Fiesta privada</option>
+          <option>Evento corporativo</option>
+          <option>Cumpleaños</option>
+          <option>Lanzamiento de marca</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="fgroup">
+        <label class="flabel" for="mensaje">Mensaje</label>
+        <textarea id="mensaje" class="ftextarea" placeholder="Cuéntanos sobre tu evento, fecha aproximada, número de invitados..."></textarea>
+      </div>
+      <button class="fsubmit" type="button">Enviar consulta →</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+    FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__top">
+
+      <!-- Marca -->
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" aria-label="Show Tech Solutions">
+          <div class="logo__squares"><i></i><i></i><i></i><i></i></div>
+          <div class="logo__text">
+            <div class="logo__name"><b>SHOW</b>TECH</div>
+            <div class="logo__sub">SOLUTIONS</div>
+          </div>
+        </a>
+        <p>
+          Creamos experiencias inolvidables en Lima, Perú.
+          Bodas, eventos corporativos, fiestas privadas y más.
+          Cada detalle cuenta, cada momento importa.
+        </p>
+        <div class="socials">
+          <a href="#" class="social-btn" title="Facebook" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <div class="footer__heading">Navegación</div>
+        <ul class="footer__list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <div class="footer__heading">Servicios</div>
+        <ul class="footer__list">
+          <li><a href="#eventos">Bodas</a></li>
+          <li><a href="#eventos">Eventos corporativos</a></li>
+          <li><a href="#eventos">Fiestas privadas</a></li>
+          <li><a href="#servicios">Catering y decoración</a></li>
+          <li><a href="#servicios">Flores decorativas</a></li>
+          <li><a href="#servicios">Entretenimiento</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        © 2015–2025 <b>Show Tech Solutions</b>. Todos los derechos reservados · Lima, Perú.
+      </p>
+      <div class="footer__legal">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/51908530433" class="wa-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ════════════════════════════════════════════════════════
+    SCRIPTS
+════════════════════════════════════════════════════════ -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
