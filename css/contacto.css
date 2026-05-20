@@ -1,0 +1,91 @@
+/* ============================================================
+  SHOW TECH SOLUTIONS — contacto.css
+   ============================================================ */
+
+/* ── Info de contacto ── */
+.s-contact-info { padding:80px var(--side-pad) 0; background:var(--black-2); }
+.contact-info__grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; max-width:1280px; margin:0 auto; }
+.contact-info-card { background:var(--black-card); border:1px solid rgba(155,61,184,.10); padding:44px 40px; display:flex; align-items:flex-start; gap:20px; transition:all var(--tr); position:relative; overflow:hidden; }
+.contact-info-card::before { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--grad); transform:scaleX(0); transition:transform var(--tr); }
+.contact-info-card:hover::before { transform:scaleX(1); }
+.contact-info-card:hover { border-color:rgba(155,61,184,.25); }
+.contact-info-card__icon { font-size:32px; flex-shrink:0; }
+.contact-info-card__label { font-size:9px; letter-spacing:3px; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:600; margin-bottom:8px; display:block; }
+.contact-info-card__value { font-size:17px; font-weight:500; color:#fff; }
+.contact-info-card__value a { color:#fff; transition:color var(--tr); }
+.contact-info-card__value a:hover { color:var(--pink-light); }
+
+/* ── Formulario + datos ── */
+.s-contact-form { padding:var(--section-pad) var(--side-pad); background:var(--black-2); }
+.contact-form__grid { display:grid; grid-template-columns:1fr 1.4fr; gap:80px; max-width:1280px; margin:0 auto; align-items:start; }
+
+.contact-data { }
+.contact-data .sec-title { margin-bottom:28px; }
+.contact-data__para { font-size:13px; color:var(--gray); line-height:1.9; font-weight:300; margin-bottom:36px; }
+
+.contact-detail { display:flex; align-items:center; gap:16px; margin-bottom:20px; text-decoration:none; transition:transform var(--tr); }
+.contact-detail:hover { transform:translateX(6px); }
+.contact-detail__icon { width:44px; height:44px; border:1.5px solid rgba(232,56,122,.28); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; transition:all var(--tr); }
+.contact-detail:hover .contact-detail__icon { background:var(--grad); border-color:transparent; }
+.contact-detail__label { font-size:8.5px; letter-spacing:2px; color:var(--gray); text-transform:uppercase; margin-bottom:3px; }
+.contact-detail__val { font-size:14px; color:#fff; font-weight:500; }
+
+.contact-dir { margin:32px 0 28px; }
+.contact-dir__label { font-size:9px; letter-spacing:3px; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:600; margin-bottom:8px; display:block; }
+.contact-dir__val { font-size:14px; color:var(--white-dim); font-weight:300; }
+
+/* Formulario */
+.cform { background:var(--black-card); border:1px solid rgba(155,61,184,.12); padding:48px 44px; border-radius:var(--r-md); }
+.cform__title { font-family:var(--font-serif); font-size:28px; font-weight:600; color:#fff; margin-bottom:6px; }
+.cform__sub { font-size:12px; color:var(--gray); margin-bottom:30px; font-weight:300; }
+.fgroup { margin-bottom:18px; }
+.flabel { display:block; font-size:8.5px; letter-spacing:2px; color:var(--gray); text-transform:uppercase; margin-bottom:7px; font-weight:600; }
+.finput,.fselect,.ftextarea {
+  width:100%;
+  background:rgba(255,255,255,.03);
+  border:1.5px solid rgba(155,61,184,.15);
+  color:var(--white); padding:13px 16px;
+  font-family:var(--font-sans); font-size:13px;
+  border-radius:var(--r-sm); transition:border-color var(--tr);
+  outline:none; font-weight:300;
+}
+.finput:focus,.fselect:focus,.ftextarea:focus { border-color:var(--pink); background:rgba(232,56,122,.04); }
+.fselect option { background:#1a1a1a; color:#fff; }
+.ftextarea { height:110px; resize:none; }
+.frow { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.fsubmit {
+  width:100%; padding:15px;
+  background:var(--grad); color:#fff; border:none;
+  font-family:var(--font-sans); font-size:10px; font-weight:700;
+  letter-spacing:2.5px; text-transform:uppercase;
+  cursor:pointer; border-radius:var(--r-sm);
+  transition:all var(--tr); margin-top:8px;
+  box-shadow:0 6px 24px rgba(232,56,122,.28);
+}
+.fsubmit:hover { background:var(--grad-h); transform:translateY(-2px); box-shadow:0 12px 36px rgba(232,56,122,.38); }
+
+/* ── Mapa ── */
+.s-map { background:var(--black-3); }
+.map-wrap { width:100%; height:400px; overflow:hidden; }
+.map-wrap iframe { width:100%; height:100%; border:none; filter:grayscale(.4) invert(.05); }
+
+/* ── CTA Final ── */
+.s-contact-cta { padding:var(--section-pad) var(--side-pad); background:var(--black-2); text-align:center; position:relative; overflow:hidden; }
+.s-contact-cta img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.20) saturate(.5); }
+.s-contact-cta__overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(232,56,122,.12),rgba(155,61,184,.12)); }
+.s-contact-cta__content { position:relative; z-index:2; }
+.s-contact-cta__sup { font-size:9px; letter-spacing:4px; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:600; margin-bottom:16px; display:block; }
+.s-contact-cta__title { font-family:var(--font-serif); font-size:clamp(36px,5vw,60px); font-weight:300; color:#fff; max-width:700px; margin:0 auto 14px; line-height:1.1; }
+.s-contact-cta__title em { font-style:italic; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.cta-contacts { display:flex; justify-content:center; gap:60px; flex-wrap:wrap; margin:30px 0 36px; }
+.cta-contact-item { }
+.cta-contact-item .lbl { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--gray); margin-bottom:6px; }
+.cta-contact-item .val { font-size:20px; font-weight:600; color:#fff; }
+
+/* ── Responsive Contacto ── */
+@media(max-width:960px){
+  .contact-info__grid { grid-template-columns:1fr; }
+  .contact-form__grid { grid-template-columns:1fr; gap:50px; }
+  .cform { padding:32px 24px; }
+  .cta-contacts { gap:30px; }
+}

@@ -1,0 +1,57 @@
+/* ============================================================
+  SHOW TECH SOLUTIONS — servicios.css
+   ============================================================ */
+
+/* ── Intro ── */
+.srv-intro { padding:70px var(--side-pad) 0; background:var(--black-2); }
+.srv-intro__inner { max-width:1280px; margin:0 auto; }
+.srv-intro__text { font-size:14px; color:var(--white-dim); line-height:1.9; max-width:700px; font-weight:300; }
+
+/* ── Cards principales (Fiestas / Bodas / Corporativo) ── */
+.s-srv-main { padding:60px var(--side-pad) var(--section-pad); background:var(--black-2); }
+.srv-main__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; max-width:1280px; margin:0 auto; }
+
+.srv-main-card { position:relative; overflow:hidden; cursor:default; border-radius:0; }
+.srv-main-card img { width:100%; height:520px; object-fit:cover; filter:brightness(.40) saturate(.75); transition:transform var(--tr-slow),filter var(--tr-slow); }
+.srv-main-card:hover img { transform:scale(1.05); filter:brightness(.32) saturate(.9); }
+.srv-main-card__overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,.90) 0%,rgba(0,0,0,.15) 55%,transparent 100%); }
+.srv-main-card__body { position:absolute; bottom:0; left:0; right:0; padding:36px 32px; }
+.srv-main-card__name { font-family:var(--font-serif); font-size:clamp(22px,2.5vw,30px); font-weight:600; color:#fff; letter-spacing:3px; text-transform:uppercase; margin-bottom:14px; }
+.srv-main-card__desc { font-size:12.5px; color:var(--white-dim); line-height:1.75; font-weight:300; margin-bottom:20px; }
+.srv-main-card__btn { display:inline-flex; align-items:center; gap:8px; font-size:9px; letter-spacing:2.5px; text-transform:uppercase; font-weight:600; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.srv-main-card__btn-bar { width:22px; height:2px; background:var(--pink); border-radius:2px; transition:width var(--tr); }
+.srv-main-card:hover .srv-main-card__btn-bar { width:36px; }
+
+/* ── Servicios que brindamos ── */
+.s-srv-list { padding:var(--section-pad) var(--side-pad); background:var(--black-3); }
+.srv-list-head { max-width:1280px; margin:0 auto 60px; }
+.srv-list-head p { font-size:13px; color:var(--gray); margin-top:12px; font-weight:300; }
+
+.srv-items { display:grid; grid-template-columns:repeat(2,1fr); gap:3px; max-width:1280px; margin:0 auto; }
+.srv-item { background:var(--black-card); border:1px solid rgba(155,61,184,.08); padding:40px 36px; display:flex; gap:22px; transition:all var(--tr); position:relative; overflow:hidden; }
+.srv-item::before { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--grad); transform:scaleX(0); transition:transform var(--tr); }
+.srv-item:hover::before { transform:scaleX(1); }
+.srv-item:hover { border-color:rgba(155,61,184,.22); background:rgba(155,61,184,.06); }
+.srv-item__icon { font-size:38px; flex-shrink:0; }
+.srv-item__content {}
+.srv-item__name { font-family:var(--font-serif); font-size:22px; font-weight:600; color:#fff; margin-bottom:10px; }
+.srv-item__desc { font-size:12.5px; color:var(--gray); line-height:1.8; font-weight:300; }
+
+/* ── Banner CTA Servicios ── */
+.s-srv-cta { position:relative; overflow:hidden; padding:110px var(--side-pad); text-align:center; }
+.s-srv-cta img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.22) saturate(.6); }
+.s-srv-cta__overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(232,56,122,.12),rgba(155,61,184,.12)); }
+.s-srv-cta__content { position:relative; z-index:2; }
+.s-srv-cta__sup { font-size:9px; letter-spacing:4px; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:600; margin-bottom:16px; display:block; }
+.s-srv-cta__title { font-family:var(--font-serif); font-size:clamp(34px,4.5vw,56px); font-weight:300; color:#fff; max-width:680px; margin:0 auto 30px; line-height:1.1; }
+.s-srv-cta__title em { font-style:italic; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+
+/* ── Testimonios en Servicios ── */
+.s-srv-testi { padding:var(--section-pad) var(--side-pad); background:var(--black-2); }
+
+/* ── Responsive Servicios ── */
+@media(max-width:960px){
+  .srv-main__grid { grid-template-columns:1fr; }
+  .srv-items { grid-template-columns:1fr; }
+  .srv-main-card img { height:320px; }
+}
