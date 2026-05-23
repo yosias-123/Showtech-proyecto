@@ -26,6 +26,11 @@
     .testi-card__role { font-size:9px; letter-spacing:2px; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
     @media(max-width:960px){ .testi__grid{grid-template-columns:1fr} }
   </style>
+  <style>
+    .page-hero { background: linear-gradient(135deg, #1a0a1a 0%, #2d1040 50%, #0a0a0a 100%); }
+    .srv-main-card { background: var(--black-3); }
+    .srv-main-card img[src=""] { display:none; }
+  </style>
 </head>
 <body>
 
@@ -54,7 +59,7 @@
 
 <!-- ═══ HERO BANNER ═══ -->
 <div class="page-hero">
-  <img src="https://images.unsplash.com/photo-1487530811015-780f2f5c7e6a?w=1800&q=80" alt="Flores decorativas para eventos" class="page-hero__img">
+  <img src="https://picsum.photos/seed/flowers1/1800/900" alt="Flores decorativas para eventos" class="page-hero__img" onerror="this.style.display='none'">
   <div class="page-hero__overlay"></div>
   <div class="page-hero__content">
     <span class="page-hero__label">Lo que ofrecemos</span>

@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/home.css">
+  <style>
+    .page-hero, .s-nos-cta, .s-contact-cta { background: linear-gradient(135deg, #1a0a1a 0%, #2d1040 50%, #0a0a0a 100%); }
+    .hero { background: linear-gradient(135deg, #0a0014 0%, #200a2e 60%, #080808 100%); }
+  </style>
+  <style>
+    .hero { background: linear-gradient(135deg, #0a0014 0%, #200a2e 60%, #080808 100%) !important; }
+    .s-cta { background: linear-gradient(135deg, #1a0a1a 0%, #2d1040 50%, #0a0a0a 100%); }
+  </style>
 </head>
 <body>
 
@@ -73,9 +81,27 @@
 <!-- ═══ NOSOTROS PREVIEW ═══ -->
 <section class="s-home-nos" id="nosotros">
   <div class="home-nos__grid">
-    <div class="nos-img-wrap reveal">
+    <div class="nos-img-wrap reveal" style="position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3;background:#111;">
       <div class="nos-corner nos-corner--tl"></div>
-      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=900&q=80" alt="Nuestro equipo en acción">
+      <!-- Video real del sitio original -->
+      <video
+        style="width:100%;height:100%;object-fit:cover;"
+        poster="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=900&q=80"
+        controls
+        preload="none"
+        aria-label="Video Show Tech Solutions"
+      >
+        <source src="https://showtechsolutions.com.pe/wp-content/uploads/2024/01/showtech-video.mp4" type="video/mp4">
+        <!-- Fallback: imagen si el video no carga -->
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=900&q=80" alt="Nuestro equipo en acción" style="width:100%;height:100%;object-fit:cover;">
+      </video>
+      <!-- Overlay de play personalizado -->
+      <div id="video-overlay" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:rgba(0,0,0,.35);cursor:pointer;transition:opacity .3s;" onclick="this.style.opacity='0';this.style.pointerEvents='none';document.querySelector('video').play();">
+        <div style="width:68px;height:68px;border-radius:50%;border:2px solid var(--pink);background:rgba(232,56,122,.15);display:flex;align-items:center;justify-content:center;transition:all .3s;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--pink)" style="margin-left:4px"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span style="font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.7);text-transform:uppercase;">Ver nuestro trabajo</span>
+      </div>
       <div class="nos-corner nos-corner--br"></div>
     </div>
     <div class="nos-text reveal">
@@ -94,18 +120,6 @@
     </div>
   </div>
 
-  <div class="mv-grid">
-    <div class="mv-card reveal">
-      <span class="mv-card__icon">🎯</span>
-      <div class="mv-card__title">Misión</div>
-      <p class="mv-card__text">Crear experiencias inolvidables a través de la planificación y producción integral de eventos, ofreciendo soluciones creativas, personalizadas y de alta calidad que superen las expectativas de nuestros clientes.</p>
-    </div>
-    <div class="mv-card reveal">
-      <span class="mv-card__icon">🚀</span>
-      <div class="mv-card__title">Visión</div>
-      <p class="mv-card__text">Ser una empresa líder en la industria de organización de eventos a nivel nacional, reconocida por la innovación, el profesionalismo y la excelencia en cada proyecto que realizamos.</p>
-    </div>
-  </div>
 </section>
 <div class="sep"></div>
 

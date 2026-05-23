@@ -22,6 +22,10 @@
     .step__desc { font-size:12.5px; color:var(--gray); line-height:1.8; font-weight:300; }
     @media(max-width:960px){ .steps{grid-template-columns:1fr;gap:48px} .steps::before{display:none} }
   </style>
+  <style>
+    .page-hero, .s-nos-cta, .s-contact-cta { background: linear-gradient(135deg, #1a0a1a 0%, #2d1040 50%, #0a0a0a 100%); }
+    .hero { background: linear-gradient(135deg, #0a0014 0%, #200a2e 60%, #080808 100%); }
+  </style>
 </head>
 <body>
 
@@ -77,8 +81,21 @@
 <!-- ═══ IMAGEN + MISIÓN / VISIÓN ═══ -->
 <section class="s-nos-mv">
   <div class="nos-mv__grid">
-    <div class="nos-mv__img-wrap reveal">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Equipo trabajando en planificación de evento">
+    <div class="nos-mv__img-wrap reveal" style="position:relative;">
+      <video
+        style="width:100%;height:100%;object-fit:cover;min-height:400px;"
+        poster="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80"
+        controls preload="none"
+      >
+        <source src="https://showtechsolutions.com.pe/wp-content/uploads/2024/01/showtech-video.mp4" type="video/mp4">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Equipo trabajando" style="width:100%;height:100%;object-fit:cover;">
+      </video>
+      <div onclick="this.style.opacity='0';this.style.pointerEvents='none';this.previousElementSibling.play();" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:rgba(0,0,0,.32);cursor:pointer;transition:opacity .3s;">
+        <div style="width:68px;height:68px;border-radius:50%;border:2px solid var(--pink);background:rgba(232,56,122,.15);display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--pink)" style="margin-left:4px"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span style="font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.7);text-transform:uppercase;">Ver nuestro trabajo</span>
+      </div>
     </div>
     <div class="nos-mv__content reveal">
       <div class="sec-label"><div class="sec-label__bar"></div><span class="sec-label__text">Sobre nosotros</span></div>
